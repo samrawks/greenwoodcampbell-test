@@ -16,6 +16,7 @@
         "gulp-csslint": "*",
         "gulp-clean-css": "*",
         "gulp-uglify": "*",
-        "gulp-concat": "*"
+        "gulp-concat": "*",
+        "browser-sync": "*"
     }
 }

@@ -1,16 +1,18 @@
 var gulp = require('gulp');
+var browserSync = require('browser-sync').create();
+var reload = browserSync.reload;
 var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
 var csslint = require('gulp-csslint');
 var autoPrefixer = require('gulp-autoprefixer');
-require('es6-promise').polyfill();
+// require('es6-promise').polyfill();
 var cssComb = require('gulp-csscomb');
 var cmq = require('gulp-merge-media-queries');
 var cleanCss = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 gulp.task('css',function(){
-  gulp.src(['dist/css//**/*.css'])
+  gulp.src(['src/css/**/*.css'])
     .pipe(plumber({
       handleError: function (err) {
         console.log(err);
@@ -29,6 +31,7 @@ gulp.task('css',function(){
     }))
     .pipe(cleanCss())
     .pipe(gulp.dest('dist/css'))
+    .pipe(reload())
 });
 gulp.task('js',function(){
   gulp.src(['src/js/**/*.js'])
@@ -44,21 +47,25 @@ gulp.task('js',function(){
     }))
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
+    .pipe(reload())
 });
-gulp.task('html',function(){
-  gulp.src(['src/html/**/*.html'])
-    .pipe(plumber({
-      handleError: function (err) {
-        console.log(err);
-        this.emit('end');
-      }
-    }))
-    .pipe(gulp.dest('./'))
-});
+// gulp.task('html',function(){
+//   gulp.src(['src/html/**/*.html'])
+//     .pipe(plumber({
+//       handleError: function (err) {
+//         console.log(err);
+//         this.emit('end');
+//       }
+//     }))
+//     .pipe(gulp.dest('./'))
+//     .pipe(reload())
+// });
 gulp.task('default',function(){
+  browserSync.init({
+    server: "./"
+  });
   gulp.watch('src/js/**/*.js', gulp.series('js'));
   gulp.watch('src/css/**/*.css', gulp.series('css'));
-  gulp.watch('src/html/**/*.html', gulp.series('html'));
+  // gulp.watch('src/html/**/*.html', gulp.series('html'));
+  // gulp.watch('src/images/**/*', gulp.series('image'));
 });
-
-// TODO: Add a livereload/browsersync package.
