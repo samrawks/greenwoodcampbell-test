@@ -1,0 +1,21 @@
+{
+    "name": "greenwoodcampbell-test",
+    "version": "1.1.0",
+    "description": "This is the test project for GreenwoodCampbell",
+    "author": "Sam Rawks",
+    "url": "https://github.com/samrawks/greenwoodcampbell-test",
+    "license": "MIT License",
+    "devDependencies": {
+        "gulp": "*",
+        "gulp-plumber": "*",
+        "gulp-rename": "*",
+        "gulp-autoprefixer": "*",
+        "es6-promise": "*",
+        "gulp-csscomb": "*",
+        "gulp-merge-media-queries": "*",
+        "gulp-csslint": "*",
+        "gulp-clean-css": "*",
+        "gulp-uglify": "*",
+        "gulp-concat": "*"
+    }
+}
