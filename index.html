@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="dist/css/style.min.css">
+  </head>
+  <body>
+    <nav class="nav__primary">
+      <div class="nav__primary--links">
+        <a href="">Patients</a>
+        <a href="">Health professionals</a>
+        <a href="">Careers</a>
+      </div>
+      <div class="nav__primary--contact">
+        <a href="tel:0808 258 2079">0808 258 2079</a>
+        <a href="">Contact us</a>
+      </div>
+    </nav>
+    <nav class="nav__secondary">
+      <img src="" alt="Ramsay Health Care">
+      <div class="nav__secondary--menu">
+        <a href="">About</a>
+        <a href="">Hospitals</a>
+        <a href="">Treatments</a>
+        <a href="">Specialists</a>
+        <a href="">For patients</a>
+        <a href="">Events</a>
+        <a href="">Journal</a>
+        <a href="">Covid-19</a>
+        <img src="" alt="Search icon">
+      </div>
+    </nav>
+    <main>
+      <div class="search__banner">
+        <h1>Search for a Specialist</h1>
+        <div class="search__form">
+          <form action="#">
+            <div class="search__form--group">
+              <label for="#treatment">Enter treatment name*</label>
+              <input type="text" id="treatment" placeholder="Hip">
+            </div>
+            <div class="search__form--group">
+              <label for="#location">Stansted CM24 1RW, UK</label>
+              <input type="text" id="location" placeholder="Hip">
+            </div>
+            <button>Find specialist</button>
+          </form>
+        </div>
+      </div>
+      <div class="search__results">
+        <h1>Search Results</h1>
+        <p>Displaying results for: hip, Near: Stansted CM24 1RW, UK <span>X Clear search</span></p>
+        <hr>
+
+        <div class="specialist">
+          <div class="col">
+            <div class="specialist_info">
+              <div class="specialist__photo">
+                <img src="https://placehold.co/100" alt="">
+              </div>
+              <div class="specialist__name">{{Specialist name}}</div> — <div class="specialist__title">{{Specialist title}}</div>
+              <div class="specialist__location">
+                Based at: Rivers Hospital &bullet; 9 Miles
+              </div>
+              <div class="specialist__links">
+                <a href="tel:01279704701">01279 704 701</a>
+                <a href="">Go to hospital website</a>
+                <a href="">Get directions</a>
+              </div>
+            </div>
+            <div class="specialist_desc">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste fugit esse recusandae possimus qui aut tempore asperiores explicabo saepe ducimus, adipisci impedit, consectetur odit quia! Delectus voluptatem aliquam temporibus?</p>
+
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste fugit esse recusandae possimus qui aut tempore asperiores explicabo saepe ducimus, adipisci impedit, consectetur odit quia! Delectus voluptatem aliquam temporibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste fugit esse recusandae possimus qui aut tempore asperiores explicabo saepe ducimus, adipisci impedit, consectetur odit quia! Delectus voluptatem aliquam temporibus?</p>
+
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste fugit esse recusandae possimus qui aut tempore asperiores explicabo saepe ducimus, adipisci impedit, consectetur odit quia! Delectus voluptatem aliquam temporibus?</p>
+              <a href="">View less</a>
+            </div>
+          </div>
+          <div class="col">
+            <button>View full profile</button>
+            <button>Book an appointment</button>
+          </div>
+          <hr>
+        </div>
+        <div class="search__pagination">
+          <p>Showing X of X results</p>
+          PAGINATION HERE
+        </div>
+        <hr>
+      </div>
+      <div class="other-services">
+        <h2>More from Ramsay Health</h2>
+        <div class="other-services__service">
+          <a href="">
+            <img src="https://placehold.co/300" alt="">
+            <h3>Orthopaedics</h3>
+          </a>
+        </div>
+        <div class="other-services__service">
+          <a href="">
+            <img src="https://placehold.co/300" alt="">
+            <h3>Oncology</h3>
+          </a>
+        </div>
+        <div class="other-services__service">
+          <a href="">
+            <img src="https://placehold.co/300" alt="">
+            <h3>General surgery</h3>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      FOOTER
+    </footer>
+  </body>
+</html>
