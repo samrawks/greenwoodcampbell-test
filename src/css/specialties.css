@@ -1,0 +1,25 @@
+.specialties {
+  margin: 60px 0;
+}
+.specialties__heading {
+  font-weight: 400;
+}
+.specialties__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 15px;
+}
+.specialties__single {
+  position: relative;
+}
+.specialties__single img {
+  width: 100%;
+}
+.specialties__single--heading {
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #162e4e;
+  font-weight: 400;
+}

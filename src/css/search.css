@@ -1,0 +1,57 @@
+.search__banner {
+  background-image: url('../img/hero-banner-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 75px;
+}
+
+.search__banner .search__banner--heading {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+}
+
+.search__banner .search__form form {
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+}
+
+.search__banner .search__form .search__form--group {
+  padding: 15px 30px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 0;
+}
+.search__banner .search__form .search__form--group label,
+.search__banner .search__form .search__form--group input {
+  display: block;
+}
+.search__banner .search__form .search__form--group input {
+  border: 0;
+}
+.search__banner .search__form button {
+  background-color: #3171b6;
+  color: #fff;
+  border: 0;
+}
+
+
+/* SEARCH RESULTS */
+.search__results--heading {
+  color: #162e4e;
+  font-weight: 200;
+}
+
+
+.specialist {
+ display: grid;
+ grid-template-columns: 80% 20%;
+}
+.specialist__photo img {
+  width: 100px;
+  height: 100px;
+}
