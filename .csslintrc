@@ -1,5 +1,6 @@
 {
   "box-sizing": false,
   "empty-rules": false,
-  "order-alphabetical": false
+  "order-alphabetical": false,
+  "known-properties": false
 }
