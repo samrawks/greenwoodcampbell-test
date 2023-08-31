@@ -16,6 +16,9 @@ footer {
   color: #fff;
   text-decoration: none;
 }
+.footer__link--contact:hover {
+  color: #4a9ef9;
+}
 .footer-primary__section--list {
   padding: 0;
 }
@@ -33,6 +36,9 @@ footer {
   color: #cecece;
   text-decoration: none;
 }
+.footer-primary__section--list li a:hover {
+  color: #4a9ef9;
+}
 
 .footer-secondary {
   display: grid;
@@ -42,6 +48,9 @@ footer {
   display: grid;
   justify-items: end;
 }
-.footer-secondary__social i + i {
-  margin-left: 15px;
+.footer-secondary__social i {
+  color: #fff;
+}
+.footer-secondary__social a:hover i {
+  color: #4a9ef9;
 }
