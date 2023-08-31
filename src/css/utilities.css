@@ -2,6 +2,13 @@
   margin: 0!important;
 }
 
+.ml-1 {
+  margin-left: 5px;
+}
+.ml-2 {
+  margin-left: 15px;
+}
+
 .p0 {
   padding: 0!important;
 }

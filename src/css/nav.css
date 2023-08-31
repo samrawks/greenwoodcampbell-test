@@ -48,12 +48,26 @@
 }
 .nav__secondary--menu {
   justify-self: end;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 .nav__secondary--menu a {
   color: #222529;
   text-decoration: none;
   font-weight: 400;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav__secondary--menu a + a {
   margin-left: 15px;
+}
+
+.nav__secondary--menu .has-submenu {
+  /* border-bottom: 5px solid #3172b4; */
+  /* box-sizing: border-box; */
 }
