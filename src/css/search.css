@@ -1,5 +1,4 @@
 .search__banner {
-  
   padding: 75px;
   position: relative;
   background-color: #fff;
@@ -34,14 +33,27 @@
   background-color: #fff;
   border-radius: 0;
 }
+.search__banner .search__form .search__form--group + .search__form--group {
+  border-left: 1px solid #dddcdd;
+}
 .search__banner .search__form .search__form--group label,
 .search__banner .search__form .search__form--group input {
   display: block;
 }
+.search__banner .search__form .search__form--group label {
+  padding-left: 1px;
+  font-size: 14px;
+}
 .search__banner .search__form .search__form--group input {
   border: 0;
-}
+  width: 100%;
 
+}
+.search__banner .search__form .search__form--group input:focus {
+  /* Added for assistive technologies. */
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
 
 .search__banner .search__form button {
   margin: 0; /* Overrides the margins from the .btn styles. */
