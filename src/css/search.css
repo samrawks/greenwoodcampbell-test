@@ -46,6 +46,10 @@
   font-weight: 200;
 }
 
+.search__results .btn {
+  width: 100%;
+}
+
 
 .specialist {
  display: grid;

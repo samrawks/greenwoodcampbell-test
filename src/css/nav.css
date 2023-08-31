@@ -1,19 +1,42 @@
 .nav__primary {
   background-color: #162e4e;
   color: #fff;
-  min-height: 40px;
+  border: 0;
 }
-.nav__primary--inner,
-.nav__secondary--inner {
- min-width: 1200px;
+.nav__primary .container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto;
+}
+.nav__primary .nav__primary--links {
+  padding: 15px 0;
 }
 .nav__primary .nav__primary--links a {
   color: #fff;
+  text-decoration: none;
+  padding: 18px;
+  font-weight: 400;
 }
-
+.nav__primary .nav__primary--links a + a {
+  margin-left: 10px;
+}
+.nav__primary .nav__primary--links .active,
+.nav__primary .nav__primary--links a:hover {
+  background-color:#dee3e9;
+  color: #162e4e;
+}
 .nav__primary--links, .nav__primary--contact {
   display: inline-block;
 }
+.nav__primary .nav__primary--contact {
+  justify-self: end;
+}
+.nav__primary .nav__primary--contact a {
+  margin-right: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
 
 .nav__secondary .container {
   display: grid;

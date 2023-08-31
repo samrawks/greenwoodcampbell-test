@@ -6,7 +6,6 @@
   position: relative;
   overflow: hidden;
   z-index: 100;
-  width: 100%;
 }
 .btn::before {
   content: '';
