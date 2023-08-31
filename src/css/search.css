@@ -1,8 +1,16 @@
 .search__banner {
-  background-image: url('../img/hero-banner-background.jpg');
+  
+  padding: 75px;
+  position: relative;
+  background-color: #fff;
+  background: linear-gradient(
+          rgba(0, 0, 0, 0.3), 
+          rgba(0, 0, 0, 0.3)
+        ),
+        url('../img/hero-banner-background.jpg');
+  /* RGBA is now fully supported so you don't technically need a fallback colour. Woo! https://caniuse.com/?search=rgba() */
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 75px;
 }
 
 .search__banner .search__banner--heading {
