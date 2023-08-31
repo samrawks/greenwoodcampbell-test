@@ -1,4 +1,47 @@
 footer {
+  padding: 60px 0;
   background-color: #162e4e;
   color: #fff;
+}
+
+.footer-primary {
+  display: grid;
+  grid-template-columns: 40% 15% 15% 15% 15%;
+}
+.footer-primary__section p {
+  margin: 20px 0;
+  color: #cecece;
+}
+.footer__link--contact {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-primary__section--list {
+  padding: 0;
+}
+.footer-primary__section--heading {
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.footer-primary__section--list li {
+  list-style: none;
+}
+.footer-primary__section--list li + li {
+  margin-top: 20px;
+}
+.footer-primary__section--list li a {
+  color: #cecece;
+  text-decoration: none;
+}
+
+.footer-secondary {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.footer-secondary__section + .footer-secondary__section {
+  display: grid;
+  justify-items: end;
+}
+.footer-secondary__social i + i {
+  margin-left: 15px;
 }
