@@ -4,5 +4,6 @@
   "order-alphabetical": false,
   "known-properties": false,
   "important": false,
-  "universal-selector": false
+  "universal-selector": false,
+  "adjoining-classes": false
 }

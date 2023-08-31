@@ -1,60 +1,64 @@
-.nav__primary {
+.nav-primary {
   background-color: #162e4e;
   color: #fff;
   border: 0;
 }
-.nav__primary .container {
+.nav-primary .container {
   display: grid;
   align-items: center;
   grid-template-columns: auto auto;
 }
-.nav__primary .nav__primary--links {
+.nav-primary .nav-primary__links {
   padding: 15px 0;
 }
-.nav__primary .nav__primary--links a {
+.nav-primary .nav-primary__links a {
   color: #fff;
   text-decoration: none;
   padding: 18px;
   font-weight: 400;
 }
-.nav__primary .nav__primary--links a + a {
+.nav-primary .nav-primary__links a + a {
   margin-left: 10px;
 }
-.nav__primary .nav__primary--links .active,
-.nav__primary .nav__primary--links a:hover {
+.nav-primary .nav-primary__links .active,
+.nav-primary .nav-primary__links a:hover {
   background-color:#dee3e9;
   color: #162e4e;
 }
-.nav__primary--links, .nav__primary--contact {
+.nav-primary__links, .nav-primary__contact {
   display: inline-block;
 }
-.nav__primary .nav__primary--contact {
+.nav-primary .nav-primary__contact {
   justify-self: end;
 }
-.nav__primary .nav__primary--contact a {
+.nav-primary .nav-primary__contact a {
   margin-right: 30px;
   color: #fff;
   text-decoration: none;
 }
 
 
-.nav__secondary .container {
+.nav-secondary {
+  position: relative;
+}
+.nav-secondary > .container {
   display: grid;
   align-items: center;
   grid-template-columns: auto auto;
 }
-.nav__secondary--logo {
+.nav-secondary__logo {
   margin: 20px 0;
 }
-.nav__secondary--menu {
+.nav-secondary__menu {
   justify-self: end;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  list-style: none;
 }
-.nav__secondary--menu a {
+.nav-secondary__menu a {
   color: #222529;
   text-decoration: none;
   font-weight: 400;
@@ -63,11 +67,112 @@
   justify-content: center;
   align-items: center;
 }
-.nav__secondary--menu a + a {
+.nav-secondary__menu li {
+  height: 100%;
+}
+.nav-secondary__menu li + li {
   margin-left: 15px;
 }
 
-.nav__secondary--menu .has-submenu {
-  /* border-bottom: 5px solid #3172b4; */
-  /* box-sizing: border-box; */
+.submenu__treatments {
+  position: relative;
+}
+
+
+
+
+
+.nav-secondary__submenu {
+  display: none;
+  background-color: #162e4e;
+  color: #fff;
+  padding: 30px 0;
+  position: absolute;
+  left: 0;
+  top: 110px;
+  width: 100%;
+  z-index: 200;
+  opacity: 0;
+  /* transition: opacity .5s linear; */
+}
+.nav-secondary__submenu.open {
+  -webkit-animation: fadeIn .5s linear;
+  -moz-animation: fadeIn .5s linear;
+  -o-animation: fadeIn .5s linear;
+  animation: fadeIn .5s linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+  1% {
+      display: block;
+      opacity: 0;
+  }
+  100% {
+      display: block;
+      opacity: 1;
+  }
+}
+.nav-secondary__submenu.close {
+  -webkit-animation: fadeOut .5s linear;
+  -moz-animation: fadeOut .5s linear;
+  -o-animation: fadeOut .5s linear;
+  animation: fadeOut .5s linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+  0% {
+      display: block;
+      opacity: 1;
+  }
+  1% {
+      display: none;
+      opacity: 1;
+  }
+  100% {
+      display: none;
+      opacity: 0;
+  }
+}
+.nav-secondary__submenu .container {
+  text-align: center;
+}
+.nav-secondary__submenu a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav-secondary__submenu--links {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  row-gap: 30px;
+  text-align: left;
+}
+.nav-secondary__submenu--links a {
+  color: #cecece;
+}
+.nav-secondary__submenu--links a:hover {
+  color: #fff;
+}
+.nav-secondary__submenu--all {
+  position: relative;
+  padding-right: 30px;
+  margin-left: 30px;
+  overflow: hidden;
+}
+.nav-secondary__submenu--all i {
+  position: absolute;
+  left: 75%;
+  top: 3px;
+  opacity: 0;
+  transition: all .2s linear;
+}
+.nav-secondary__submenu--all:hover i {
+  transition: all .2s linear;
+  left: 85%;
+  opacity: 1;
 }
