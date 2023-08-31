@@ -57,8 +57,6 @@
 .search__results .btn {
   width: 100%;
 }
-
-
 .specialist {
  display: grid;
  grid-template-columns: 80% 20%;
@@ -66,4 +64,41 @@
 .specialist__photo img {
   width: 100px;
   height: 100px;
+}
+
+.specialist_info--wrapper {
+  display: flex;
+}
+.specialist__photo,
+.specialist_info {
+  display: inline-block;
+}
+
+.specialist__photo {
+  margin-right: 30px;
+}
+.specialist__name {
+  margin: 0 0 20px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.specialist__location {
+  margin-bottom: 10px;
+}
+.specialist__links a {
+  color: #3171b6;
+  text-decoration: none;
+}
+.specialist__links a + a {
+  margin-left: 30px;
+}
+.fa-hospital {
+  color: #3171b6;
+}
+.specialist_desc {
+  margin-top: 30px;
+}
+.specialist__accordion {
+  display: block;
+  margin-top: 15px;
 }
